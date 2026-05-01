@@ -8,16 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-		<form>
+		<form method = "post">
 			<label for= "name">Name</label>
 			<input type = "text" placeholder = "Name" id = "name" required><br>
 			<label for= "email">Email</label>
 			<input type = "Email" placeholder = "Email" id = "email" required><br>
 
-			<label for= "gender_m">Gender</label><br>
-			<input type = "Radio" id = "gender_m" required name ="Gender">Male<br>
-			<input type = "Radio" id = "gender_f" required name ="Gender">female<br>
+			<label>Gender</label><br>
 
+			<input type="radio" id="gender_m" name="gender" value="male" required>
+			<label for="gender_m">Male</label><br>
+
+			<input type="radio" id="gender_f" name="gender" value="female" required>
+			<label for="gender_f">Female</label><br>
+
+			<label for ="cars">Car Brands</label>
 			<select placeholder= "--Please choose an option--" id ="cars" required >
 				<option>BMW</option>
 				<option>SWIFT</option>
